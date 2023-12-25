@@ -1,0 +1,43 @@
+$color_1: white;
+$color_2: transparent;
+$color_3: #35A7F0;
+$background-color_1: #35A7F0;
+
+.hero-section {
+	border-bottom: none;
+}
+.hero {
+	height: 100vh;
+	// background-image: url(../assets/visax-1rne6r1VcY0-unsplash.png);
+	background-size: 100% 100vh;
+	background-repeat: no-repeat;
+	h2 {
+		color: $color_1;
+		position: absolute;
+		font-size: 7vmin;
+		&:nth-child(1) {
+			top: 14%;
+			left: 5%;
+		}
+		&:nth-child(2) {
+			color: $color_2;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			z-index: -1;
+			font-size: 12vmin;
+			background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 194, 194),rgb(255, 0, 0) );
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background: whatever;
+			background-size: 200%;
+			animation: pan 4s linear infinite;
+		}
+		&:nth-child(3) {
+			bottom: 14%;
+			right: 5%;
+		}
+	}
+}
